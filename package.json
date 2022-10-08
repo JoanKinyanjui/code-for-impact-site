@@ -1,0 +1,31 @@
+{
+  "name": "code-for-impact",
+  "version": "1.0.0",
+  "private": true,
+  "description": "code-for-impact",
+  "author": "JoanKinyanjui",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.24.3",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-sharp": "^4.24.0",
+    "gatsby-transformer-sharp": "^4.24.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "gatsby-plugin-postcss": "^5.24.0",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8"
+  }
+}
