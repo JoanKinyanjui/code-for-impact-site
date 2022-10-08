@@ -4,10 +4,10 @@ import '../styles/global.css'
 
 const Main = () =>{
 return(
-    <div className='w-screen font-serif  flex pt-48 pb-12 '>
- <div className='w-1/2 text-center'>
-<h3 className='text-5xl text-sky-400 pb-12 font-bold pt-8'>Code For Impact</h3>
-<p className='pb-7 text-lg'>
+    <div className='w-screen font-serif  block sm:flex  pt-48 pb-12 '>
+ <div className='w-full sm:w-1/2 text-center'>
+<h3 className=' text-5xl md:text-7xl text-sky-400 pb-12 font-bold pt-8'>Code For Impact</h3>
+<p className='pb-7  text-lg sm:text-xl'>
 Free landing page template to promote your business startup and generate leads for the offered services
 </p>
 
@@ -17,7 +17,7 @@ Free landing page template to promote your business startup and generate leads f
 <i className='text-slate-400 py-1'>Sed fermentum felis ut cursu</i>
  </div>
 
- <div className='w-1/2 '>  
+ <div className='w-full sm:w-1/2 '>  
 <img src ={pic2}  className='mx-auto'/>
  </div>
     </div>

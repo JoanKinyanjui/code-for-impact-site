@@ -7,8 +7,8 @@ import '../styles/global.css'
 const Reviews = () =>{
 return(
     <div className='w-screen bg-blue-50 ' >
-<h5 className='text-center font-serif text-2xl text-slate-500'>WHAT CUSTOMERS ARE SAYING...</h5>
-<div className='flex flex-wrap text-center py-16'>
+<h5 className='text-center font-serif text-2xl text-slate-500 py-2 sm:py-4 md:py-8'>WHAT CUSTOMERS ARE SAYING...</h5>
+<div className='flex flex-wrap text-center py-4 sm:py-8 md:py-16'>
     {feedback.map((review,index)=>(
         <div key={review.id} className="w-80 mx-auto py-8">
             <title>{review.title}</title>

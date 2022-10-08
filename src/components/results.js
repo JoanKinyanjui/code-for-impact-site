@@ -3,26 +3,33 @@ import '../styles/global.css'
 
 
 const Results = () =>{
+   const[num,setNum]=React.useState(0);
+
+   React.useEffect(() => {
+      num < 101 && setTimeout(() => setNum(num + 1), 200);
+    }, [num]);
+    
+
 return(
-    <div className=' py-24  w-3/4 mx-auto'  >
+    <div className=' py-24 w-full lg:w-3/4 mx-auto'  >
  <ul className='flex flex-row'>
     <li className='mx-auto'>
     <div className='text-center'>
-    <p className='font-bold text-blue-500 text-7xl pb-4'>+ 100%</p>
+    <p className='font-bold text-blue-500 text-2xl sm:text-5xl md:text-7xl pb-4 '>+ {num} %</p>
     <p> Stats Information</p>
    </div>
     </li>
 
     <li className='mx-auto'>
     <div className='text-center'>
-    <p className='font-bold text-blue-500 text-7xl pb-4'>+ 100%</p>
+    <p className='font-bold text-blue-500 text-2xl sm:text-5xl md:text-7xl pb-4'>+ {num}%</p>
     <p> Stats Information</p>
    </div>
     </li>
 
     <li className='mx-auto'>
     <div className='text-center'>
-    <p className='font-bold text-blue-500 text-7xl pb-4'>+ 100%</p>
+    <p className='font-bold text-blue-500 text-2xl sm:text-5xl md:text-7xl pb-4'>+ {num}%</p>
     <p> Stats Information</p>
    </div>
     </li>
