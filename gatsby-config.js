@@ -12,6 +12,7 @@ module.exports = {
      "xl":"1280px",
     }
   },
+  plugins: [`gatsby-plugin-gatsby-cloud`],
   plugins:[],
   plugins: [`gatsby-transformer-sharp`, `gatsby-plugin-sharp`],
   plugins: ['gatsby-plugin-postcss'],
