@@ -4,7 +4,7 @@ import '../styles/global.css'
 
 const Main = () =>{
 return(
-    <div className='w-screen font-serif  block sm:flex   pt-24 sm:pt-32 md:pt-48 pb-12 '>
+    <div className='w-screen font-serif  block sm:flex   pt-32 sm:pt-38 md:pt-48 pb-12 '>
  <div className='w-full sm:w-1/2 text-center'>
 <h3 className=' text-5xl md:text-7xl text-sky-400 pb-12 font-bold pt-8'>Code For Impact</h3>
 <p className='pb-7  text-lg sm:text-xl'>
