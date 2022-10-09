@@ -23,7 +23,7 @@ return(
     </div>
 
     <div className='mt-8 sm:mt-10 lg:mt-14 mx-auto sm:mb-0 mb-1 '>
-    <button class="bg-blue-400 hover:bg-blue-700 hover:text-lg text-sm text-white  sm:font-bold rounded  px-1 py1 md:px-6 md:py-2"> Login </button>
+    <button class="bg-blue-400 hover:bg-blue-700 hover:text-lg text-xs sm:text:sm text-white  sm:font-bold rounded  px-1 py1 md:px-6 md:py-2"> Login </button>
 
     </div>
 
