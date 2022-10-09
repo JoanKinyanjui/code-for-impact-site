@@ -1,6 +1,6 @@
 import * as React from 'react';
 import '../styles/global.css';
-import tree from '/public/static/images/another-removebg-preview.png';
+import tree from '../images/another.png';
 
 const Features = () =>{
 return(

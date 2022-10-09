@@ -1,5 +1,5 @@
 import * as React from 'react';
-import pic from '/public/static/images/screenshot-removebg-preview.png';
+import pic from '../images/screenshot.png';
 import '../styles/global.css'
 
 const Process = () =>{
@@ -12,7 +12,7 @@ return(
     </div>
 
     <div className='w-full md:w-1/2 '>
-        <img className='items-end mx-auto pt-8 lg:pt-1 w-3/4' src={pic} />
+        <img className='items-end mx-auto pt-8 lg:pt-1 w-3/4' alt='img' src={pic} />
     </div>
   </div>
 
@@ -23,7 +23,7 @@ return(
     </div>
   
     <div className='w-full md:w-1/2'> 
-      <img className='items-end mx-auto pt-8 lg:pt-1 w-3/4' src={pic} /></div>
+      <img className='items-end mx-auto pt-8 lg:pt-1 w-3/4' alt='img'  src={pic} /></div>
   </div>
 
   <div className='block md:flex py-8'>
@@ -32,7 +32,7 @@ return(
         <p className='font-serif text-xl'>Once the market analysis process is completed our staff will search for opportunities that are in reach</p>
     </div>
     <div className='w-full md:w-1/2'>
-      <img src={pic} className=' items-end mx-auto pt-8 lg:pt-1 w-3/4'  /></div>
+      <img src={pic} className=' items-end mx-auto pt-8 lg:pt-1 w-3/4' alt='img'   /></div>
   </div>
     </div>
 )

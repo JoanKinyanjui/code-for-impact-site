@@ -1,12 +1,12 @@
 import * as React from 'react';
-import tree from '/public/static/images/tree-removebg-preview.png';
+import tree from '../images/tree.png';
 import '../styles/global.css'
 
 const Nav = () =>{
 return(
     <div className='w-screen pb-5 flex shadow-md font-serif fixed bg-white'>
     <div className='w-1/4 '>
-        <img  className=' pt-4 sm:pt-8 md:pt-4 w-1/2 sm:w-1/4 mx-auto' src= {tree} />
+        <img  className=' pt-4 sm:pt-8 md:pt-4 w-1/2 sm:w-1/4 mx-auto' alt='img'  src= {tree} />
     </div>
 
     <div className='w-3/4 sm:w-1/2 text-center text-md sm:text-lg mt-10'>

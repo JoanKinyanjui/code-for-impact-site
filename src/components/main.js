@@ -1,5 +1,5 @@
 import * as React from 'react';
-import pic2 from '/public/static/images/another-removebg-preview.png';
+import pic2 from "../images/screenshot.png";
 import '../styles/global.css'
 
 const Main = () =>{
@@ -18,7 +18,7 @@ Free landing page template to promote your business startup and generate leads f
  </div>
 
  <div className='w-full sm:w-1/2 '>  
-<img src ={pic2}  className='mx-auto'/>
+<img src ={pic2}  className='mx-auto' alt='img' />
  </div>
     </div>
 )
