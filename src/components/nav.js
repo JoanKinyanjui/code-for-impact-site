@@ -5,7 +5,7 @@ import '../styles/global.css'
 const Nav = () =>{
 return(
     <div className='w-screen  block sm:flex shadow-md font-serif fixed bg-white '>
-<div className='mx-auto sm:w-1/8  '>
+<div className='mx-auto sm:w-1/8 h-4 sm:h-fit '>
 <div className='border-solid mx-auto'>
         <img  className='mx-auto sm:w-full h-10 sm:h-20 sm:h-24 md:h-29 lg:h-32 xl:h-34 ' alt='img'  src= {tree} />
     </div>
