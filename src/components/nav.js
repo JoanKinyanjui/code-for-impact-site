@@ -7,7 +7,14 @@ return(
     <header class="sticky top-0 bg-white shadow text-blue-500"><div class="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
         <div class="flex items-center text-2xl text-black"><div class="w-12 mr-3">
             <img src={tree}/>
-            </div>Lander</div><div class="flex mt-4 sm:mt-0"><a class="px-4" href="#features">Features</a><a class="px-4" href="#services">Services</a><a class="px-4" href="#stats">Stats</a><a class="px-4" href="#testimonials">Testimonials</a></div>
+            </div>Code For Impact</div>
+            <div class="flex mt-4 sm:mt-0">
+                <a class="px-4" href="#features">What it is</a>
+                <a class="px-4" href="#services">Benefits</a>
+                <a class="px-4" href="#stats">Members</a>
+                <a class="px-4" href="#testimonials">Join us</a>
+                <a class="px-4" href="#testimonials">Blog</a>
+                </div>
             <div class="hidden md:block">
         <button type="button" class="
         py-3 px-8
@@ -16,7 +23,7 @@ return(
         hover:bg-blue-500
         rounded
         text-white
-    ">Start Free Trial</button>
+    ">Login</button>
     </div></div></header>
 //     <div className='w-screen  block sm:flex shadow-md font-serif fixed bg-white '>
 // <div className='mx-auto sm:w-1/8 h-4 sm:h-fit '>

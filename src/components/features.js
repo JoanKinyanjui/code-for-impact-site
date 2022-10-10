@@ -4,33 +4,26 @@ import tree from '../images/screenshot.png';
 
 const Features = () =>{
 return(
-  <div className=' py-20 lg:pb-40 lg-pt-48 sm:py-24 md:py-32 container mx-auto text-center'>
+  <div className=' py-20 lg:pb-40 lg-pt-48 sm:py-24 md:py-32 container mx-auto text-center font-serif leading-none '>
   <div className='text-center pb-7 font-bold'>
-    <h2 className='text-3xl font-serif text-bold text-gray-900'>Main Features</h2>
+    <h2 className=' text-3xl lg:text-4xl font-serif text-bold text-gray-900'>What It Is</h2>
   </div>
 
-  <div className=' flex flex-col sm:flex-row sm:mx-3 mt-12'>
+  <div className=' sm:mx-3 mt-12 text-xl mx-8 '>
 
-  <div className='max-w-sm rounded overflow-hidden shadow-lg w-full lg:w-1/3 mx-auto text-center py-7  '>
-  {/* <img class="w-full" src={tree} alt="Sunset in the mountains"/> */}
-    <h6 className='italic font-bold text-xl mb-2 font-serif'>Service One</h6>
-    <p className='text-gray-700 text-base pb-4 text-xl'>An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio velna vitae auctor integer.</p>
-  </div>
+  There are many small not-for-profits and social enterprises that maintain and use their own open-source repos to do a lot of impactful work.
+   However, they can neither afford to hire a large number of coders to develop and maintain their projects, nor do they get the same support from the 
+   open source community that large or famous open-source repos do. Code for Impact aims to bring such small social-impact-based organisations and their
+    open source repos under one roof. Contributors can either browse through the repos and decide to contribute by themselves, or contribute by enrolling 
+    to contribute via Code for Impact. Enrolling to contribute through Code for Impact gives the contributor access to project management tools, guidance from the
+     repo’s lead developer, peer-support via a slack channel, and after 6 months of active contribution, a certificate mentioning their contribution and thanking 
+     them for it. Enrolling to contribute through Code for Impact also gives the member organisation the ability to receive contributions in a predictable manner.
+      This website and the Code for Impact project is maintained jointly and cooperatively by member organisations.
 
-  <div className='max-w-sm rounded overflow-hidden shadow-lg w-full lg:w-1/3 mx-auto text-center py-7'>
-  {/* <img class="w-full" src={tree} alt="Sunset in the mountains"/> */}
-    <h6 className='font-bold text-xl italic mb-2 font-serif'> Service Two</h6>
-    <p className='text-gray-700 text-base pb-4 text-xl'>An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio velna vitae auctor integer.</p>
-  </div>
-
-  <div className='max-w-sm rounded overflow-hidden shadow-lg w-full lg:w-1/3 pb-8 mx-auto text-center py-7' >
-  {/* <img class="w-full" src={tree} alt="Sunset in the mountains"/> */}
-    <h6 className='font-bold  italic text-xl mb-2 font-serif text-xl'>Service Three</h6>
-    <p className='text-gray-700 text-base pb-4'> An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio velna vitae auctor integer.</p>
-  </div>
 
   </div>
-  </div>
+ 
+</div>
 )
 }
 
