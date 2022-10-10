@@ -6,16 +6,20 @@ import '../styles/global.css'
 
 const Reviews = () =>{
 return(
-    <div className='w-screen bg-blue-50 ' >
+    <div className='w-screen  ' >
 <h5 className='text-center font-serif text-2xl text-slate-500 py-2 sm:py-4 md:py-8'>WHAT CUSTOMERS ARE SAYING...</h5>
-<div className='flex flex-wrap text-center py-4 sm:py-8 md:py-16'>
+<div className='flex flex-wrap text-center py-4 sm:py-8 md:py-16 '>
     {feedback.map((review,index)=>(
-        <div key={review.id} className="w-80 mx-auto py-8">
+        <div key={review.id} className="w-80 mx-auto py-8  px-1  max-w-sm rounded overflow-hidden shadow-md  mx-auto text-center py-7">
             <title>{review.title}</title>
             <p>{review.feedback}</p>
         <div className='flex '>      
-        <img src={review.image} className='rounded-full w-20 h-20'/>      
-        <i className='pt-8 px-4 '><p>{review.name}</p></i>
+        <img src={review.image} className='rounded-full w-20 h-20'/>   
+       
+      <div className='block text-left'>
+      <p className='pt-8 px-2 font-sans'><p>{review.name}</p></p>
+        <i className='text-sm text-gray-500'>{review.career}</i>   
+      </div>
         </div>
         </div>
     ))}
