@@ -16,7 +16,7 @@ const list = ()=>(
     
 <div className='w-64 h-screen overflow-hidden'>
 <div className='bg-blue-100 w-full h-full text-base '>
-         <List className="block h-screen text-blue-600">
+         <List className="block h-screen text-blue-300">
         <ListItem className="my-4" href="#features">
           What it is
         </ListItem>
