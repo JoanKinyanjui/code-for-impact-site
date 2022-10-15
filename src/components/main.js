@@ -1,32 +1,34 @@
 import * as React from 'react';
 import pic2 from "../images/another.png";
 import '../styles/global.css'
+import HeroImage from '../svg/HeroImage';
 
 const Main = () =>{
 return(
     
-<div className='pt-20 md:pt-40 pb-24 '>
-    <div className='container mx-auto px-8 lg:flex'>
-    <div className='text-center lg:text-left lg:w-1/2'>
-    <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none font-sans">Code for Impact</h1>
-    <p class="text-xl lg:text-2xl mt-6 font-normal font-sans">A collaborative development community for small open source repos</p>
-    <p class="mt-8 md:mt-12 py-8">
+    <div className="pt-20 md:pt-40 py-24 pb-36">
+    <div className="container mx-auto px-8 lg:flex">
+      <div className="text-center lg:text-left lg:w-1/2">
+        <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+          Code for Impact
+        </h1>
+        <p className="text-xl lg:text-2xl mt-6 font-light">
+        A collaborative development community for small open source repos
+        </p>
+        <p className="mt-8 md:mt-12">
         <button type="button" class="
         py-4 px-12
-        
-        bg-primary
-        hover:bg-primary-darker
         bg-blue-500
+        hover:bg-primary-darker
         rounded
-        text-white
-    ">Get Started</button></p>
+        text-white">Learn more</button>
+        </p>
+      </div>
+      <div className="lg:w-1/2">
+        <HeroImage />
+      </div>
     </div>
-    <div>
-    <img src={pic2}  className="lg:w-full sm:h-full mx-auto" alt="image"/>
-    </div>
-    </div>
-
-</div>
+  </div>
 
 
 )

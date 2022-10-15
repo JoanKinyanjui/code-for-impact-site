@@ -4,13 +4,13 @@ import tree from '../images/screenshot.png';
 
 const Features = () =>{
 return(
-<div className='bg-blue-50 w-screen'>
+<div className='bg-blue-100  w-screen '>
 <div className=' py-20 lg:pb-40 lg-pt-48 sm:py-24 md:py-32 container mx-auto text-center leading-none  '>
   <div className='text-center pb-7 font-bold'>
-    <h2 className=' text-3xl lg:text-4xl font-sans font-semibold text-gray-900'>What it is</h2>
+    <h2 className='text-3xl font-sans font-semibold text-gray-900'>What it is</h2>
   </div>
 
-  <div className='text-base sm:text-lg lg:text-2xl  font-sans w-full md:w-3/4  text-gray-900 mx-auto '>
+  <div className='text-base  sm:text-xl lg:text-2xl  font-light w-full md:w-3/4    mx-auto '>
 <p className='mx-8 md:mx-0'>
 
 There are many small not-for-profits and social enterprises that maintain and use their own open-source repos to do a lot of impactful work.
