@@ -20,7 +20,7 @@ return(
           <h3 className="text-3xl font-semibold leading-tight">
             For the contributor
           </h3>
-      <p className="mt-8 text-base  sm:text-xl lg:text-2xl font-light leading-relaxed">
+      <p className="mt-8 text-base  sm:text-lg lg:text-xl  font-light leading-relaxed">
           <ul >
       <li className='list-disc'>An opportunity to be part of a real-life project and to learn how to navigate the coding and non-coding parts of being a coder in the real world.</li>
       <li className='list-disc'>The increased sense of purpose that comes from working with an organisation that really needs help and also does impactful work.</li>
@@ -40,7 +40,7 @@ return(
         <div className="container mx-auto px-16 items-center flex flex-col lg:flex-row order-last lg:order-first">
         <div className="lg:pr-4 xl:pr-8">
           <h3 className="text-3xl font-semibold leading-tight">For member organizations</h3>
-          <p className="mt-8 text-base  sm:text-xl lg:text-2xl font-light leading-relaxed">
+          <p className="mt-8 text-base  sm:text-lg lg:text-xl font-light leading-relaxed">
           <ul >
     <li className='list-disc'>Your repo will be featured on the Code for Impact website</li>
     <li className='list-disc'>A solution to the problem of not being able to afford to hire a number of talented coders to develop and maintain your open source repos</li>

@@ -7,7 +7,6 @@ import DehazeIcon from '@mui/icons-material/Dehaze';
 import LogoIcon from '../svg/LogoIcon';
 
 function DropDownNav() {
-const [isOpen, setOpen] = useState(false)
 
 const [state,setState] = useState(false);
 const toggleDrawer = (open)=>(event)=>{
@@ -17,7 +16,7 @@ const list = ()=>(
     
 <div className='w-64 h-screen overflow-hidden'>
 <div className='bg-blue-100 w-full h-full text-base '>
-         <List className="block h-screen ">
+         <List className="block h-screen text-blue-600">
         <ListItem className="my-4" href="#features">
           What it is
         </ListItem>

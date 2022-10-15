@@ -10,7 +10,7 @@ return(
     <h2 className='text-3xl font-sans font-semibold text-gray-900'>What it is</h2>
   </div>
 
-  <div className='text-base  sm:text-xl lg:text-2xl  font-light w-full md:w-3/4    mx-auto '>
+  <div className='text-base  sm:text-lg lg:text-xl  font-light w-full md:w-3/4    mx-auto '>
 <p className='mx-8 md:mx-0'>
 
 There are many small not-for-profits and social enterprises that maintain and use their own open-source repos to do a lot of impactful work.

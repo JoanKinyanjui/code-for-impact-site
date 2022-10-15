@@ -7,8 +7,8 @@ import DropDownNav from './DropDownNav';
 function Nav(){
     return(
 <>
-<BigNav className="" />
-<DropDownNav className="hidden" />
+<BigNav />
+<DropDownNav  />
 </>
     )
 }
