@@ -13,7 +13,7 @@ function BigNav() {
         </div>
         Code for Impact
       </div>
-      <div className="flex mt-4 sm:mt-0 text-blue-300">
+      <div className="flex mt-4 sm:mt-0 text-blue-500">
         <AnchorLink className="px-4" href="#features">
           What it is
         </AnchorLink>
