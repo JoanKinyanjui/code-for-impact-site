@@ -11,7 +11,7 @@ const Results = () =>{
     
 
 return(
-    <div className=' py-24 w-full lg:w-3/4 mx-auto'  >
+    <div className=' py-24 w-full lg:w-3/4 mx-auto '  >
  <ul className='flex flex-row mx-8 lg:mx-0 flex-wrap'>
     <li className='mx-auto'>
     <div className='text-center'>

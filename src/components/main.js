@@ -12,7 +12,7 @@ return(
         <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
           Code for Impact
         </h1>
-        <p className="text-base  sm:text-lg lg:text-xl  mt-6 font-light">
+        <p className="text-base  sm:text-lg lg:text-xl  mt-6 font-normal">
         A collaborative development community for small open source repos
         </p>
         <p className="mt-8 md:mt-12">

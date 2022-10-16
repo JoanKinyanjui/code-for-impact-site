@@ -5,6 +5,7 @@ import { Button, List, ListItem } from '@material-ui/core';
 import { useState } from 'react';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import LogoIcon from '../svg/LogoIcon';
+import CloseIcon from '@mui/icons-material/Close';
 
 function DropDownNav() {
 
@@ -17,6 +18,12 @@ const list = ()=>(
 <div className='w-64 h-screen overflow-hidden'>
 <div className='bg-blue-100 w-full h-full text-base '>
          <List className="block h-screen text-blue-500">
+        <ListItem className="my-4 ml-40" href="#features">
+        <Button  onClick={toggleDrawer(false)}> <CloseIcon  style={{color:'DodgerBlue'}} fontSize="large" /> </Button>
+        </ListItem>
+        <ListItem className="my-4" href="#features">
+          What it is
+        </ListItem>
         <ListItem className="my-4" href="#features">
           What it is
         </ListItem>
@@ -59,7 +66,7 @@ const list = ()=>(
    
 
   
-<Button  onClick={toggleDrawer(true)}> <DehazeIcon   fontSize="large" /> </Button>
+<Button  onClick={toggleDrawer(true)}> <DehazeIcon  style={{color:'DodgerBlue'}}  fontSize="large" /> </Button>
 <Drawer 
 anchor={'right'}
 open={state}
