@@ -15,7 +15,7 @@ return(
 <SplitSection
       reverseOrder
       primarySlot={
-        <div className="container mx-auto px-8 items-center flex flex-col lg:flex-row ">
+        <div className="container mx-auto px-8 items-center flex flex-col lg:flex-row mb-4 sm:mb-8 lg:mb-0">
         <div className="lg:pl-8 xl:pl-16 ">
           <h3 className="text-2xl lg:text-3xl font-medium leading-tight">
             For the contributor
@@ -37,7 +37,7 @@ return(
 <SplitSection className="flex"
       id="services"
       primarySlot={
-        <div className="container mx-auto px-16 items-center flex flex-col lg:flex-row order-last lg:order-first">
+        <div className="container mx-auto px-16 items-center flex flex-col lg:flex-row order-last lg:order-first mb-4 sm:mb-8 lg:mb-0">
         <div className="lg:pr-4 xl:pr-8">
           <h3 className="text-2xl lg:text-3xl font-medium leading-tight">For member organizations</h3>
           <p className="mt-8 text-base  font-sans  font-normal leading-relaxed">
