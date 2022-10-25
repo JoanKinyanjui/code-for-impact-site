@@ -39,13 +39,8 @@ return(
       primarySlot={
         <div className="container mx-auto px-16 items-center flex flex-col lg:flex-row order-last lg:order-first mb-16 sm:mb-20 lg:mb-0">
         <div className="lg:pr-4 xl:pr-8">
-<<<<<<< HEAD
-          <h3 className="text-3xl font-medium leading-tight">For member organizations</h3>
-          <p className="mt-8 text-base  font-sans font-normal leading-relaxed">
-=======
           <h3 className="text-2xl lg:text-3xl font-medium leading-tight">For member organizations</h3>
           <p className="mt-8 text-base  font-sans  font-normal leading-relaxed">
->>>>>>> refs/remotes/origin/master
           <ul >
     <li className='list-disc'>Your repo will be featured on the Code for Impact website</li>
     <li className='list-disc'>A solution to the problem of not being able to afford to hire a number of talented coders to develop and maintain your open source repos</li>
