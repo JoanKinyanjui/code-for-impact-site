@@ -1,6 +1,7 @@
 import React from 'react';
 import LogoIcon from '../svg/LogoIcon';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Link } from "gatsby"
 
 function BigNav() {
   return (
@@ -31,13 +32,17 @@ function BigNav() {
         </AnchorLink>
       </div>
       <div className="hidden md:block">
-      <button type="button" class="
-        py-4 px-12
+      <Link to="/Login">
+        <button type="button" class="
+        py-2 px-8
         bg-blue-500
         hover:bg-primary-darker
         rounded
-        text-white">Login</button>
-      </div>
+        text-white"
+        
+        >Login</button>
+        </Link>
+        </div>
     </div>
   </header>
   

@@ -3,6 +3,10 @@ module.exports = {
     title: `Code For Impact`,
     siteUrl: `https://www.yourdomain.tld`,
   },
+  proxy:{
+  prefix : "/",
+  url:"http://localhost:3000"
+  },
   // theme:{
   //   screens:{
   //     "sm" : "640px",
@@ -14,4 +18,6 @@ module.exports = {
   plugins:[],
   plugins: [`gatsby-transformer-sharp`, `gatsby-plugin-sharp`],
   plugins: ['gatsby-plugin-postcss'],
+  
+  
 }

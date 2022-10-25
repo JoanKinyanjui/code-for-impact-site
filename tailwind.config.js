@@ -12,7 +12,9 @@ module.exports = {
     "./src/components/footer.js",
     "./src/components/DropDownNav.js",
     "./src/components/SmallNav.js",
-    "./src/components/BigNav.js"
+    "./src/components/BigNav.js",
+    "./src/pages/Login.js",
+    "./src/pages/Signup.js"
   ],
   theme: {
     extend: {},
