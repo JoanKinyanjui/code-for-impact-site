@@ -13,7 +13,7 @@ const IndexPage = () => {
   return (
 <div>
 <Nav />
-<Main />
+<Main name=" A collaborative development community for small open source repos" />
 <Features />
 <Process />
 <Results />

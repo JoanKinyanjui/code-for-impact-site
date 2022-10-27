@@ -3,7 +3,7 @@ import pic2 from "../images/another.png";
 import '../styles/global.css'
 import HeroImage from '../svg/HeroImage';
 
-const Main = () =>{
+const Main = (props) =>{
 return(
     
     <div className="pt-20 md:pt-40 py-24 pb-36">
@@ -13,7 +13,7 @@ return(
           Code for Impact
         </h1>
         <p className="text-base  sm:text-lg lg:text-xl  mt-6 font-normal">
-        A collaborative development community for small open source repos
+       {props.name}
         </p>
         <p className="mt-8 md:mt-12">
         <button type="button" class="

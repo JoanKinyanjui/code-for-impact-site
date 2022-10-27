@@ -2,6 +2,7 @@
 import * as React from "react";
 import "../styles/global.css";
 import { Link, navigate } from "gatsby";
+import LoggedIn from "./LoggedIn";
 
 const LoginPage = (props) => {
   const [email, setEmail] = React.useState("");
@@ -40,7 +41,8 @@ const LoginPage = (props) => {
 
     if (success) {
       // navigate to home page
-      navigate('/')
+      navigate('/LoggedIn')
+
      
     } else {
       window.alert(msg);

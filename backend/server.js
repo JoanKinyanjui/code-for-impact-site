@@ -6,6 +6,7 @@ const connectDB = require('./dbConn');
 const { mongoose } = require('mongoose');
 const User = require('./Models/users');
 const jwt = require('jsonwebtoken');
+const withAuth = require('./middleware')
 const cookieParser = require('cookie-parser');
 const secret = 'mysecretsshhh';
 // const path = require('path');
@@ -103,7 +104,7 @@ app.post('/Login', function(req, res) {
               expiresIn: '1h'
             });
             console.log("success")
-            // res.cookie('token', token, { httpOnly: true })
+            res.cookie('token', token, { httpOnly: true })
            return res.status(200).json({
               success: true,
               msg: 'success',
@@ -115,14 +116,14 @@ app.post('/Login', function(req, res) {
   });
 
 
-// //Login logic..
-// app.post('/Login',(req,res)=>{
-//     console.log("rkingwo")
-//     const {email, password} = req.body;
-//     // let email = req.body.email;
-//     // let password = req.body.password;
-//     console.log(`Username: ${email} Password: ${password}`);
-//     res.json(`Username: ${email} Password: ${password}`);
+  // app.get('/secret', withAuth, function(req, res) {
+  //   res.send('The password is potato');
+  // });
   
-// })
+  app.get('/checkToken', withAuth, function(req, res) {
+    return res.statusCode(200).json({
+      success:true,
+      msg:"success"});
+        // res.sendStatus(200);
+  });
 
