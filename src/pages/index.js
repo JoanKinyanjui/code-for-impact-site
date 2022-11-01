@@ -10,6 +10,7 @@ import Results from '../components/results'
 import Reviews from '../components/reviews'
 
 const IndexPage = () => {
+  
   return (
 <div>
 <Nav />

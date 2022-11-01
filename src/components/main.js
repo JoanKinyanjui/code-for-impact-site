@@ -13,7 +13,7 @@ return(
           Code for Impact
         </h1>
         <p className="text-base  sm:text-lg lg:text-xl  mt-6 font-normal">
-       {props.name}
+       {props.name} {props.username}
         </p>
         <p className="mt-8 md:mt-12">
         <button type="button" class="

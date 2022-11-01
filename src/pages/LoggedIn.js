@@ -6,10 +6,9 @@ import Nav from '../components/LoggedIn/nav';
 
 
 
+const LoggedIn = ({location}) => {
+  let name = location.state.name
 
-
-const LoggedIn = () => {
-   
  //useEffect
  React.useEffect(()=>{
     const fetchData = async () => {
@@ -24,11 +23,12 @@ const LoggedIn = () => {
     
         if (success) {
             // navigate to home page
-            navigate('http://localhost:8000/')
+            navigate('/')
            
           } else {
             //navigate to "Welcome page"
-            navigate('http://localhost:8000/Login')
+            navigate('http://localhost:8000/Login',{
+            })
           }
     }
 fetchData();
@@ -38,7 +38,7 @@ fetchData();
   return (
 <div>
 <Nav />
-<Main name=' Welcome to your Profile' />
+<Main name=' Welcome to your Profile' username={name} />
 </div>
   )
 }

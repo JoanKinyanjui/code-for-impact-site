@@ -61,9 +61,9 @@ app.post('/register', (req, res) => {
 
 // //Authenticate User...
 app.post('/Login', function(req, res) {
-    const { email, password } = req.body;
+    const { username, password } = req.body;
 
-    User.findOne({ email }, function(err, user) {
+    User.findOne({ username }, function(err, user) {
       if (err) {
         console.error(err);
         console.log('Internal error please try again')
@@ -99,7 +99,7 @@ app.post('/Login', function(req, res) {
             });
           } else {
             // Issue token
-            const payload = { email };
+            const payload = { username };
             const token = jwt.sign(payload, secret, {
               expiresIn: '1h'
             });
@@ -126,4 +126,5 @@ app.post('/Login', function(req, res) {
       msg:"success"});
         // res.sendStatus(200);
   });
+
 

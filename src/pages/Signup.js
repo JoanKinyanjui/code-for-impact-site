@@ -5,16 +5,13 @@ import { Link, navigate } from "gatsby"
 
 
 const Signup = () => {
-    const [firstname,setFirstname]= React.useState('');
-    const [lastname,setLastname]= React.useState('');
+    const [username,setUsername]= React.useState('');
     const [email,setEmail]= React.useState('');
     const [password,setPassword] =React.useState("");
 
-const onHandleFirstnameChange=(e)=>{
-   setFirstname(e.target.value)
-}
-const onHandleLastnameChange=(e)=>{
-    setLastname(e.target.value)
+
+const onHandleUsernameChange=(e)=>{
+    setUsername(e.target.value)
  }
     
 const onHandleEmailChange=(e)=>{
@@ -27,8 +24,7 @@ const onHandlePasswordChange=(e)=>{
 
 const onHandleSubmit= async(e)=>{
  e.preventDefault();
- setFirstname('');
- setLastname('');
+ setUsername('');
  setEmail('');
  setPassword('');
  console.log('input submitted')
@@ -41,8 +37,7 @@ const response =await fetch('http://localhost:3000/register',{
       'Content-Type':'application/json'
     },
     body:JSON.stringify({
-      firstname,
-      lastname,
+      username,
       email,
       password
     }),
@@ -55,7 +50,7 @@ const response =await fetch('http://localhost:3000/register',{
    }else{
     window.alert(msg)
    }
-   console.log(firstname,lastname,email,password)
+   console.log(username,email,password)
 }
 
 
@@ -64,31 +59,18 @@ return(
   <>
     <form  onSubmit={onHandleSubmit} container maxWidth="xl" className='bg-blue-50 w-screen h-screen grid grid-cols-1  place-content-center space-y-6 md:space-y-10'>
         <p className='mx-auto text-black text-2xl md:text-3xl font-sans' >SIGN UP</p>
-{/* first name */}
-        <input
-      className='py-4 px-8 w-1/2 md:w-1/4 mx-auto rounded-sm focus:outline-none '
-      placeholder='first name'
-        labelText="firstname"
-        formControlProps={{
-          fullWidth: true
-        }}
-        type="fistname"
-        name='firstname'
-        value={firstname}
-        onChange={onHandleFirstnameChange}
-      />
-{/* last name */}
+//Username
 <input
       className='py-4 px-8 w-1/2 md:w-1/4 mx-auto rounded-sm focus:outline-none '
-      placeholder="last name"
-        labelText="lastname"
+      placeholder="username"
+        labelText="username"
         formControlProps={{
           fullWidth: true
         }}
-        type="lastname"
-        name='lastname'
-        value={lastname}
-        onChange={onHandleLastnameChange}
+        type="username"
+        name='username'
+        value={username}
+        onChange={onHandleUsernameChange}
       />
 {/* email */}
       <input

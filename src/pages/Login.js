@@ -5,11 +5,11 @@ import { Link, navigate } from "gatsby";
 import LoggedIn from "./LoggedIn";
 
 const LoginPage = (props) => {
-  const [email, setEmail] = React.useState("");
+  const [username,setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
 
   const onHandleEmailChange = (e) => {
-    setEmail(e.target.value);
+    setUsername(e.target.value);
   };
   const onHandlePasswordChange = (e) => {
     setPassword(e.target.value);
@@ -17,7 +17,7 @@ const LoginPage = (props) => {
 
   const onHandleSubmit = async (e) => {
     e.preventDefault();
-    setEmail("");
+    setUsername("");
     setPassword("");
     console.log("input submitted");
 
@@ -28,7 +28,7 @@ const LoginPage = (props) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        email,
+        username,
         password,
       }),
     });
@@ -41,14 +41,16 @@ const LoginPage = (props) => {
 
     if (success) {
       // navigate to home page
-      navigate('/LoggedIn')
+      navigate('/LoggedIn',{
+        state:{name:username}
+      })
 
      
     } else {
       window.alert(msg);
     }
 
-    console.log(email, password);
+    console.log(username, password);
   };
 
   return (
@@ -70,9 +72,9 @@ const LoginPage = (props) => {
             fullWidth: true,
           }}
           type="text"
-          name="email"
+          name="username"
           // id ="email"
-          value={email}
+          value={username}
           onChange={onHandleEmailChange}
         />
 
